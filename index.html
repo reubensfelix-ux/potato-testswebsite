@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Accessible potato knowledge hub with recipes, varieties, and history for every tater lover." />
+    <title>Potato Knowledge Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spectral:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="branding">
+          <span aria-hidden="true" class="logo">🥔</span>
+          <div>
+            <p class="eyebrow">The Potato Collective</p>
+            <p class="site-title">Potato Knowledge Hub</p>
+          </div>
+        </div>
+        <nav aria-label="Primary" class="primary-nav">
+          <ul>
+            <li><a aria-label="About potatoes" href="#about" aria-current="page">About</a></li>
+            <li><a aria-label="Explore potato varieties" href="#varieties">Varieties</a></li>
+            <li><a aria-label="Potato nutrition facts" href="#nutrition">Nutrition</a></li>
+            <li><a aria-label="Featured recipes" href="#recipes">Recipes</a></li>
+            <li><a aria-label="Potato history timeline" href="#history">History</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Fresh from the soil</p>
+            <h1 id="hero-title">Modern potato facts, recipes, and farming insights</h1>
+            <p class="lead">
+              Celebrate the world’s most versatile tuber with chef-tested recipes, varietal spotlights,
+              and science-backed nutrition guidance. Built with accessibility in mind so every tater fan can enjoy.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#recipes">Browse recipes</a>
+              <a class="btn secondary" href="#history">Dive into history</a>
+            </div>
+          </div>
+          <figure class="hero-media">
+            <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=900&q=80" alt="Assorted potatoes spilling out of a rustic basket" />
+            <figcaption>Potatoes come in more than 5,000 varieties worldwide.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="container info-grid">
+          <div>
+            <h2 id="about-title">Why potatoes matter</h2>
+            <p>
+              Potatoes fuel over a billion people every day. They are naturally gluten-free, pack more potassium than a banana,
+              and adapt to almost every cuisine on Earth. Sustainable growers are reimagining how we plant and plate this humble root.
+            </p>
+          </div>
+          <ul class="stat-list" aria-label="Potato impact statistics">
+            <li>
+              <span class="stat-value">150+</span>
+              <span class="stat-label">Countries grow potatoes</span>
+            </li>
+            <li>
+              <span class="stat-value">110 cal</span>
+              <span class="stat-label">Per medium potato</span>
+            </li>
+            <li>
+              <span class="stat-value">5k</span>
+              <span class="stat-label">Documented varieties</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="varieties" aria-labelledby="varieties-title" class="surface">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="varieties-title">Meet the varieties</h2>
+            <p>Each potato type shines in different dishes. Use the badges to find perfect matches.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card" aria-labelledby="russet-title">
+              <img src="https://images.unsplash.com/photo-1506801310323-534be5e7f77b?auto=format&fit=crop&w=600&q=80" alt="Freshly harvested russet potatoes with soil" />
+              <div class="card-body">
+                <h3 id="russet-title">Russet Burbank</h3>
+                <p>Light, fluffy interior that makes oven fries and baked potatoes irresistibly crisp.</p>
+                <div class="badge-row">
+                  <span class="badge">Baking</span>
+                  <span class="badge">Fries</span>
+                  <span class="badge">Mashing</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" aria-labelledby="yukon-title">
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80" alt="Yellow Yukon Gold potatoes on a cutting board" />
+              <div class="card-body">
+                <h3 id="yukon-title">Yukon Gold</h3>
+                <p>Natural buttery flavor with thin skin. Ideal for creamy soups and weeknight mashes.</p>
+                <div class="badge-row">
+                  <span class="badge">Soups</span>
+                  <span class="badge">Roasting</span>
+                  <span class="badge">Salads</span>
+                </div>
+              </div>
+            </article>
+            <article class="card" aria-labelledby="purple-title">
+              <img src="https://images.unsplash.com/photo-1502740479091-635887520276?auto=format&fit=crop&w=600&q=80" alt="Purple potatoes sliced open showing vibrant flesh" />
+              <div class="card-body">
+                <h3 id="purple-title">Purple Majesty</h3>
+                <p>Antioxidant-rich violet flesh that keeps its color. Adds drama to roasts and salads.</p>
+                <div class="badge-row">
+                  <span class="badge">Antioxidants</span>
+                  <span class="badge">Roasting</span>
+                  <span class="badge">Salads</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="nutrition" aria-labelledby="nutrition-title">
+        <div class="container nutrition-grid">
+          <div>
+            <h2 id="nutrition-title">Nutrition at a glance</h2>
+            <p>One skin-on potato delivers energy, fiber, and electrolytes without added fat.</p>
+            <ul class="fact-list">
+              <li><strong>Vitamin C:</strong> 30% Daily Value</li>
+              <li><strong>Potassium:</strong> More than a banana</li>
+              <li><strong>Fiber:</strong> 2 grams in the skin</li>
+              <li><strong>Protein:</strong> 3 grams plant-based protein</li>
+            </ul>
+          </div>
+          <div class="callout" role="complementary" aria-label="Cooking tip">
+            <h3>Pro tip</h3>
+            <p>Steam or roast potatoes with the skin on to retain the most nutrients and texture.</p>
+            <button type="button" class="btn primary full-width">Download nutrition guide</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="recipes" aria-labelledby="recipes-title" class="surface">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="recipes-title">Cook something new</h2>
+            <p>Simple recipes crafted with six ingredients or fewer.</p>
+          </div>
+          <div class="recipe-grid">
+            <article class="recipe-card">
+              <h3>Crispy smashed potatoes</h3>
+              <p>Parboil baby potatoes, smash gently, then roast with olive oil and rosemary.</p>
+              <a class="text-link" href="https://www.loveandlemons.com/smashed-potatoes/" target="_blank" rel="noopener noreferrer">Open instructions</a>
+            </article>
+            <article class="recipe-card">
+              <h3>Smoky potato tacos</h3>
+              <p>Season roasted cubes with smoked paprika and tuck into warm corn tortillas.</p>
+              <a class="text-link" href="https://www.budgetbytes.com/smoky-roasted-potatoes/" target="_blank" rel="noopener noreferrer">Open instructions</a>
+            </article>
+            <article class="recipe-card">
+              <h3>Herbed potato salad</h3>
+              <p>Toss tender potatoes with dill vinaigrette, crunchy celery, and pickled onions.</p>
+              <a class="text-link" href="https://www.seriouseats.com/french-style-potato-salad-recipe" target="_blank" rel="noopener noreferrer">Open instructions</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="history" aria-labelledby="history-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="history-title">A quick history lesson</h2>
+            <p>Track potatoes from Andean terraces to global food security hero.</p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <div class="timeline-year">8000 BCE</div>
+              <p>Indigenous communities in Peru domesticate wild potatoes on terraced mountain farms.</p>
+            </li>
+            <li>
+              <div class="timeline-year">1570</div>
+              <p>Spanish explorers introduce potatoes to Europe, where botanists first cultivate them as curiosities.</p>
+            </li>
+            <li>
+              <div class="timeline-year">1845</div>
+              <p>The Irish potato famine reveals the dangers of monoculture and inspires agricultural reform.</p>
+            </li>
+            <li>
+              <div class="timeline-year">Today</div>
+              <p>Modern breeders develop climate-smart potatoes that thrive in drought and salty soils.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <p class="site-title">Potato Knowledge Hub</p>
+          <p class="muted">Crafted with WCAG-compliant colors and keyboard-friendly navigation.</p>
+        </div>
+        <div>
+          <a class="text-link" href="mailto:hello@potatohub.com">hello@potatohub.com</a>
+          <p class="muted">© 2025 Potato Collective</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
